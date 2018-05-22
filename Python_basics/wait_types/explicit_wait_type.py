@@ -12,7 +12,7 @@ class ExplicitWaitType():
         self.hw = HandyWrappers(driver)
 
 
-    def waitForElement(self, locator, locatorType="id",
+    def waitForElement(self, locator, locatorType="xpath",
                        timeout=10, pollFrequency=0.5):
         element = None
         try:
@@ -24,7 +24,7 @@ class ExplicitWaitType():
                                                      ElementNotVisibleException,
                                                      ElementNotSelectableException])
             element = wait.until(EC.element_to_be_clickable((byType,
-                                                         "stopFilter_stops-0")))
+                                                         "//select[@name='sort']")))
             print("Element appeared on the web page")
         except:
             print("Element not appeared on the web page")

@@ -3,6 +3,7 @@ from selenium.webdriver.common.by import By
 from wait_types.explicit_wait_type import ExplicitWaitType
 import time
 import os
+from selenium.webdriver.common.keys import Keys
 
 class ExplicitWaitDemo2():
 
@@ -22,7 +23,7 @@ class ExplicitWaitDemo2():
         returnDate = driver.find_element(By.ID, "flight-returning")
         returnDate.clear()
         returnDate.send_keys("12/26/2016")
-        driver.find_element(By.ID, "search-button").click()
+        returnDate.send_keys(Keys.RETURN)
 
         element = wait.waitForElement("stopFilter_stops-0")
         element.click()
