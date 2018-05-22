@@ -1,20 +1,10 @@
-"""
-Exceptions are errors
-"""
-
 def exceptionHandling():
     try:
-        a = 10
-        b = 20
-        c = 0
-
-        d = (a + b) / c
-        print(d)
+        car = {"make": "bmw", "model": "550i", "year": "2016"}
+        print(car["color"])
     except:
-        print("In the except block")
-    else:
-        print("Because there was no exception, else is executed")
+        print("Key not found")
     finally:
-        print("Finally, always executed")
+        print("Please try a different key")
 
 exceptionHandling()
