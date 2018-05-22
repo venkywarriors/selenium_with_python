@@ -6,7 +6,8 @@ Created on May 21, 2018
 import os
 from selenium import webdriver
 import io
-chrome_driver_path = os.path.dirname(__file__)  + "\chromedriver.exe"
+
+chrome_driver_path = os.path.abspath('..')  + "\\Drivers\\chromedriver.exe"
  
 driver=webdriver.Chrome(chrome_driver_path)
 
