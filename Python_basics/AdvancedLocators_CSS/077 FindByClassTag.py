@@ -4,7 +4,9 @@ class FindByClassTag():
 
     def test(self):
         baseUrl = "https://letskodeit.teachable.com/pages/practice"
-        driver = webdriver.Firefox()
+        chrome_driver_path = os.path.abspath('..')  + "\\Drivers\\chromedriver.exe"
+ 
+        driver=webdriver.Chrome(chrome_driver_path)
         driver.get(baseUrl)
 
         elementByClassName = driver.find_element_by_class_name("displayed-class")

@@ -4,7 +4,9 @@ class FindByIdName():
 
     def test(self):
         baseUrl = "https://letskodeit.teachable.com/pages/practice"
-        driver = webdriver.Firefox()
+        chrome_driver_path = os.path.abspath('..')  + "\\Drivers\\chromedriver.exe"
+ 
+        driver=webdriver.Chrome(chrome_driver_path)
         driver.get(baseUrl)
         elementById = driver.find_element_by_id("name")
 
@@ -20,6 +22,7 @@ class FindByIdName():
         # This one should fail because the Id is not static
         # Exception thrown: NoSuchElementException
         driver.find_element_by_id("yui_3_18_0_4_1463100170626_1148")
+        driver.close()
 
 ff = FindByIdName()
 ff.test()
