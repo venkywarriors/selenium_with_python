@@ -1,11 +1,14 @@
 from selenium import webdriver
 import time
+import os
 
 class HiddenElements():
 
     def testLetsKodeIt(self):
         baseUrl = "https://letskodeit.teachable.com/pages/practice"
-        driver = webdriver.Firefox()
+        chrome_driver_path = os.path.abspath('..')  + "\\Drivers\\chromedriver.exe"
+ 
+        driver=webdriver.Chrome(chrome_driver_path)
         driver.maximize_window()
         driver.get(baseUrl)
         driver.implicitly_wait(2)
@@ -39,12 +42,14 @@ class HiddenElements():
 
     def testExpedia(self):
         baseUrl = "http://www.expedia.com"
-        driver = webdriver.Firefox()
+        chrome_driver_path = os.path.abspath('..')  + "\\Drivers\\chromedriver.exe"
+ 
+        driver=webdriver.Chrome(chrome_driver_path)
         driver.maximize_window()
         driver.get(baseUrl)
         driver.implicitly_wait(3)
-
-        driver.find_element_by_id("tab-flight-tab").click()
+        #selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"id","selector":"tab-flight-tab"}
+        driver.find_element_by_id("tab-flight-tab").click()  
 
         drpdwnElement = driver.find_element_by_id("flight-age-select-1")
         print("Element visible? " + str(drpdwnElement.is_displayed()))

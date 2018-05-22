@@ -1,10 +1,13 @@
 from selenium import webdriver
+import os
 
 class BrowserInteractions():
 
     def test(self):
         baseUrl = "https://letskodeit.teachable.com/pages/practice"
-        driver = webdriver.Firefox()
+        chrome_driver_path = os.path.abspath('..')  + "\\Drivers\\chromedriver.exe"
+ 
+        driver=webdriver.Chrome(chrome_driver_path)
 
         # Window Maximize
         driver.maximize_window()
@@ -37,7 +40,7 @@ class BrowserInteractions():
         print("Current Url of the web page is: " + currentUrl)
         # Get Page Source
         pageSource = driver.page_source
-        print(pageSource)
+        print(pageSource.encode("utf-8"))
         # Browser Close / Quit
         # driver.close()
         driver.quit()

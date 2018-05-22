@@ -1,12 +1,15 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
+import os
 
 class ClickAndSendKeys():
 
     def test(self):
         baseUrl = "https://letskodeit.teachable.com"
-        driver = webdriver.Firefox()
+        chrome_driver_path = os.path.abspath('..')  + "\\Drivers\\chromedriver.exe"
+ 
+        driver=webdriver.Chrome(chrome_driver_path)
         driver.maximize_window()
         driver.get(baseUrl)
         driver.implicitly_wait(10)

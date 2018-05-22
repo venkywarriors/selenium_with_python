@@ -1,10 +1,13 @@
 from selenium import webdriver
+import os
 
 class ElementState():
 
     def isEnabled(self):
         baseUrl = "http://www.google.com"
-        driver = webdriver.Firefox()
+        chrome_driver_path = os.path.abspath('..')  + "\\Drivers\\chromedriver.exe"
+ 
+        driver=webdriver.Chrome(chrome_driver_path)
         driver.maximize_window()
         driver.get(baseUrl)
         driver.implicitly_wait(3)
