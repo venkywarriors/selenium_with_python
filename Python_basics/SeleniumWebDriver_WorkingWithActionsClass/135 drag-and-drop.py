@@ -2,12 +2,15 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver import ActionChains
 import time
+import os
 
 class DragAndDrop():
 
     def test1(self):
         baseUrl = "https://jqueryui.com/droppable/"
-        driver = webdriver.Firefox()
+        chrome_driver_path = os.path.abspath('..')  + "\\Drivers\\chromedriver.exe"
+ 
+        driver=webdriver.Chrome(chrome_driver_path)
         driver.maximize_window()
         driver.get(baseUrl)
         driver.implicitly_wait(3)

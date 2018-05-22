@@ -4,15 +4,12 @@ import time
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import *
-import os
 
 class ExplicitWaitDemo1():
 
     def test(self):
         baseUrl = "http://www.expedia.com"
-        chrome_driver_path = os.path.abspath('..')  + "\\Drivers\\chromedriver.exe"
- 
-        driver=webdriver.Chrome(chrome_driver_path)
+        driver = webdriver.Firefox()
         driver.implicitly_wait(.5)
         driver.maximize_window()
         driver.get(baseUrl)

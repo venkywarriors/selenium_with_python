@@ -1,11 +1,14 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
+import os
 
 class WindowSize():
 
     def test(self):
-        driver = webdriver.Firefox()
+        chrome_driver_path = os.path.abspath('..')  + "\\Drivers\\chromedriver.exe"
+ 
+        driver=webdriver.Chrome(chrome_driver_path)
         driver.maximize_window()
         driver.get("https://letskodeit.teachable.com/pages/practice")
         driver.implicitly_wait(3)

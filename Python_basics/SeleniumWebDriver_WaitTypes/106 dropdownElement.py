@@ -1,14 +1,16 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
-# from selenium.webdriver.support.select import Select
+from selenium.webdriver.support.select import Select
+import os
 
 class AirbnbExercise1():
 
     def test(self):
         baseUrl = "https://www.airbnb.com/"
-        driver = webdriver.Firefox()
-        #driver = webdriver.Chrome()
+        chrome_driver_path = os.path.abspath('..')  + "\\Drivers\\chromedriver.exe"
+ 
+        driver=webdriver.Chrome(chrome_driver_path)
         driver.maximize_window()
         driver.get(baseUrl)
         driver.implicitly_wait(10)
