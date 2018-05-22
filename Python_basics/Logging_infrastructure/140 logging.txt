@@ -1,0 +1,31 @@
+Please change the extension of this file to .conf and then use it
+Please also delete these line before using the file
+Udemy does not allow to upload .conf files, this is why I had to change the extension to .txt
+[loggers]
+keys=root,LoggerDemoConf
+
+[handlers]
+keys=fileHandler
+
+[formatters]
+keys=simpleFormatter
+
+[logger_root]
+level=DEBUG
+handlers=fileHandler
+
+[logger_LoggerDemoConf]
+level=INFO
+handlers=fileHandler
+qualname=demoLogger
+propagate=0
+
+[handler_fileHandler]
+class=FileHandler
+level=DEBUG
+formatter=simpleFormatter
+args=('test.log', 'w')
+
+[formatter_simpleFormatter]
+format=%(asctime)s - %(name)s - %(levelname)s - %(message)s
+datefmt=%m/%d/%Y %I:%M:%S %p
