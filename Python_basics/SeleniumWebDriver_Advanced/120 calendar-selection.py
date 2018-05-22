@@ -15,9 +15,9 @@ class CalendarSelection():
         driver.implicitly_wait(3)
 
         # Click flights tab
-        driver.find_element_by_id("tab-flight-tab").click()
+        driver.find_element_by_id("tab-flight-tab-hp").click()
         # Find departing field
-        departingField = driver.find_element_by_id("flight-departing")
+        departingField = driver.find_element_by_id("flight-departing-hp-flight")
         # Click departing field
         departingField.click()
         # Find the date to be selected
@@ -41,9 +41,9 @@ class CalendarSelection():
         driver.implicitly_wait(3)
 
         # Click flights tab
-        driver.find_element_by_id("tab-flight-tab").click()
+        driver.find_element_by_id("tab-flight-tab-hp").click()
         # Click departing field
-        driver.find_element_by_id("flight-departing").click()
+        driver.find_element_by_id("flight-departing-hp-flight").click()
         # Expedia website has changed the DOM after the lecture was made
         # Updated new xpath
         calMonth = driver.find_element(By.XPATH, "(//div[@class='datepicker-cal-month'])[1]")
@@ -57,4 +57,5 @@ class CalendarSelection():
                 break
 
 ff = CalendarSelection()
+ff.test1()
 ff.test2()

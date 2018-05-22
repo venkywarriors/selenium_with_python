@@ -2,7 +2,7 @@
 pip3 install pytest-html
 py, pytest, pytest-html
 
-Command: py.test filename --html=report.html
+Command: py.test test_suite_demo.py --html=report.html
 """
 
 import unittest
