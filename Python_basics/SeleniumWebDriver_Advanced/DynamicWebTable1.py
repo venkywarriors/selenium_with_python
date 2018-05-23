@@ -28,19 +28,7 @@ class DynamicWebTable1(unittest.TestCase):
         rows = len(self.driver.find_elements_by_xpath(".//*[@id='table01']/tbody/tr"))
         print("rows - ",rows)
         print("columns - ",columns)
-        for row in range(1,3):
-            for col in range(1,3):
-                values = self.driver.find_element_by_xpath(".//*[@id='table01']/tbody/tr["+row+"]/td["+col+"]").text
-                
-               # .//*[@id='table01']/tbody/tr[1]/td[2]
-                print(values)
-
-
-    @classmethod
-    def tearDownClass(cls):
-        # close the browser window
-        cls.driver.quit()
-         ''' data=[]
+        data=[]
         for row in range(rows):
             column=row.find_elements_by_tag_name('td')
             if column:
@@ -50,7 +38,20 @@ class DynamicWebTable1(unittest.TestCase):
                 print(values)
             
         
-        print(data)'''  
+        print(data)
+        '''for row in range(1,3):
+            for col in range(1,3):
+                values = self.driver.find_element_by_xpath(".//*[@id='table01']/tbody/tr["+row+"]/td["+col+"]").text
+                
+               # .//*[@id='table01']/tbody/tr[1]/td[2]
+                print(values)'''
+
+
+    @classmethod
+    def tearDownClass(cls):
+        # close the browser window
+        cls.driver.quit()
+
 
 
 if __name__ == '__main__':
