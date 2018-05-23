@@ -16,30 +16,17 @@ driver.implicitly_wait(3)
 
 doc = driver.page_source
 
-emails = re.findall(r'[\w\.-]+@[\w\.-]+', doc)
+
+emails = [email.text for email in driver.find_elements_by_class_name('linkText') if "@" in email.text]
+'''emails = re.findall(r'[\w\.-]+@[\w\.-]+', doc)
 list_new = []
 for email in emails:
-    list_new.extend(str(email))
-    print(email)
+    list_new.append(str(email))
+    print(email)'''
 
 
 driver.quit()
 
-print(list_new)
-
-'''
-console output :
-call.del@airindia.in
-call.del@airindia.in
-flyingreturnsbase.ai@iclployalty.com
-
-['c', 'a', 'l', 'l', '.', 'd', 'e', 'l', '@', 'a', 'i', 'r', 'i', 'n', 'd', 'i', 'a', '.', 'i', 'n', 'c', 
-'a', 'l', 'l', '.', 'd', 'e', 'l', '@', 'a', 'i', 'r', 'i', 'n', 'd', 'i', 'a', '.', 'i', 'n', 'c
- 'i', 'n', 'd', 'i', 'a', '.', 'i', 'n', 'c', 'a', 'l', 'l', '.', 'b', 'o', 'm', '@', 'a', 'i', 'r', 'i', 'n', 'd', 'i']
- 
-My Excepted output :
-
-['call.del@airindia.in','call.del@airindia.in','flyingreturnsbase.ai@iclployalty.com']
+print(emails)
 
 
-'''
