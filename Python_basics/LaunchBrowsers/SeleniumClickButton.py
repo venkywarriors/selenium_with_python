@@ -5,6 +5,7 @@ Created on May 21, 2018
 '''
 import os
 from selenium import webdriver
+import time
 
 chrome_driver_path = os.path.dirname(__file__)  + "\chromedriver.exe"
  
@@ -17,6 +18,10 @@ python_button.click()
  
 # type text
 text_area = driver.find_element_by_id('textarea')
+time.sleep(3)
+
+text_area.clear()
+
 text_area.send_keys("print('Hello World')")
 
 # click submit button
