@@ -1,4 +1,7 @@
-
+'''
+Created on May 30, 2018
+@author: venkateshwara.d
+'''
 class Car(object):
 
     def __init__(self):
@@ -15,8 +18,6 @@ class BMW(Car):
     def __init__(self):
         Car.__init__(self)
         print("You just created the BMW instance")
-
-
 
 c = Car()
 c.drive()
