@@ -1,3 +1,7 @@
+''
+Created on May 30, 2018
+@author: venkateshwara.d
+'''
 from selenium import webdriver
 import time
 from selenium.webdriver.support.select import Select
@@ -31,7 +35,6 @@ class DropdownSelect():
 
         sel.select_by_index(2)
         print("Select Honda by index")
-
 
 ff = DropdownSelect()
 ff.test()
