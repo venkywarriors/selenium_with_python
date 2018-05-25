@@ -12,18 +12,16 @@ baseUrl = "https://jqueryui.com/datepicker/#date-range"
 chrome_driver_path = os.path.abspath('..')  + "\\Drivers\\chromedriver.exe"
  
 driver=webdriver.Chrome(chrome_driver_path)
-
-        # Window Maximize
+# Window Maximize
 driver.maximize_window()
-        # Open the Url
+# Open the Url
 driver.get(baseUrl)
-
 time.sleep(3)
-        #define frame
+#define frame
 frame=driver.find_element_by_tag_name('iframe')
-        #switch to frame
+#switch to frame
 driver.switch_to_frame(frame)
-        #Choose From Month Day Date
+ #Choose From Month Day Date
 datepicker_from=driver.find_element_by_xpath("//input[@id='from']")
 datepicker_from.click()
 time.sleep(2)
@@ -33,11 +31,10 @@ time.sleep(3)
 select_from_month=Select(month_from)
 select_from_month.select_by_visible_text("Apr")
 time.sleep(2)
-
 day_from=driver.find_element_by_xpath("//table/tbody/tr/td/a[text()='30']")
 day_from.click()
 time.sleep(5)
-        #Choose To Month Day Date
+#Choose To Month Day Date
 datepicker_to=driver.find_element_by_xpath("//input[@id='to']")
 datepicker_to.click()
 time.sleep(2)
@@ -50,22 +47,8 @@ time.sleep(2)
 day_to=driver.find_element_by_xpath("//table/tbody/tr/td/a[text()='1']")
 day_to.click()
 time.sleep(5)
-        #Get the string in To input
+#Get the string in To input
 to_month_string=datepicker_to.get_attribute('value')
 print(to_month_string)
-
+# close the browser
 driver.close()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
