@@ -10,7 +10,6 @@ import time
 
 class DynamicWebTable1(unittest.TestCase):
     
-    
     @classmethod
     def setUpClass(cls):
         chrome_driver_path = os.path.abspath('..')  + "\\Drivers\\chromedriver.exe"
@@ -39,6 +38,5 @@ class DynamicWebTable1(unittest.TestCase):
         # close the browser window
         cls.driver.quit()
         
-
 if __name__ == '__main__':
     unittest.main(verbosity=2)
