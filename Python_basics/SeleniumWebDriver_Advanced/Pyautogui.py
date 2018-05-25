@@ -9,7 +9,6 @@ from selenium import webdriver
 import time
 import os
 
-
 '''chrome_driver_path = os.path.abspath('..')  + "\\Drivers\\chromedriver.exe"
  
 driver=webdriver.Chrome(chrome_driver_path)
@@ -44,5 +43,3 @@ pyautogui.keyUp('shift')
 
 # Mouse operation https://pyautogui.readthedocs.io/en/latest/mouse.html
 # keyboard operation https://pyautogui.readthedocs.io/en/latest/keyboard.html
-
-
