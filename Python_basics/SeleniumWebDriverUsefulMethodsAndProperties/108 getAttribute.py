@@ -1,8 +1,11 @@
+'''
+Created on May 30, 2018
+@author: venkateshwara.d
+'''
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
 import os
-
 
 class GetAttribute():
 
@@ -21,7 +24,6 @@ class GetAttribute():
         print("Value of attribute is: " + result)
         time.sleep(1)
         driver.quit()
-
 
 ff = GetAttribute()
 ff.test()
