@@ -39,8 +39,5 @@ class SwitchToFrame():
         time.sleep(2)
         driver.find_element(By.ID, "name").send_keys("Test Successful")
 
-
-
-
 ff = SwitchToFrame()
 ff.test()
