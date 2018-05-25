@@ -1,9 +1,12 @@
+'''
+Created on May 30, 2018
+@author: venkateshwara.d
+'''
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from utilities.handy_wrappers import HandyWrappers
 import time
 import os
-
 
 class DynamicXPathFormat():
 
@@ -35,7 +38,6 @@ class DynamicXPathFormat():
 
         courseElement = driver.find_element(By.XPATH, _courseLocator)
         courseElement.click()
-
 
 ff = DynamicXPathFormat()
 ff.test()
