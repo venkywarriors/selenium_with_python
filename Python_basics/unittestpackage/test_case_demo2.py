@@ -30,6 +30,5 @@ class TestCaseDemo2(unittest.TestCase):
         print("I will run only once after all tests")
         print("*#" * 30)
 
-
 if __name__ == '__main__':
     unittest.main(verbosity=2)
