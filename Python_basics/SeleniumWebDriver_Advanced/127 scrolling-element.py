@@ -1,3 +1,7 @@
+'''
+Created on May 30, 2018
+@author: venkateshwara.d
+'''
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
@@ -12,7 +16,6 @@ class ScrollingElement():
         driver.maximize_window()
         driver.get("https://letskodeit.teachable.com/pages/practice")
         driver.implicitly_wait(3)
-
 
         # Scroll Down
         driver.execute_script("window.scrollBy(0, 1000);")
@@ -34,8 +37,6 @@ class ScrollingElement():
         location = element.location_once_scrolled_into_view
         print("Location: " + str(location))
         driver.execute_script("window.scrollBy(0, -150);")
-
-
 
 ff = ScrollingElement()
 ff.test()
