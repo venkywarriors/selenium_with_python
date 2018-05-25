@@ -1,3 +1,7 @@
+'''
+Created on May 30, 2018
+@author: venkateshwara.d
+'''
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
@@ -48,7 +52,6 @@ class CalendarSelection():
         # Updated new xpath
         calMonth = driver.find_element(By.XPATH, "(//div[@class='datepicker-cal-month'])[1]")
         allValidDates = calMonth.find_elements(By.TAG_NAME, "button")
-
         time.sleep(2)
 
         for date in allValidDates:
