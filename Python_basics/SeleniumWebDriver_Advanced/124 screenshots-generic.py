@@ -1,3 +1,7 @@
+'''
+Created on May 30, 2018
+@author: venkateshwara.d
+'''
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
@@ -19,8 +23,6 @@ class Screenshots():
         driver.find_element(By.ID, "user_password").send_keys("abc")
         driver.find_element(By.NAME, "commit").click()
         self.takeScreenshot(driver)
-
-
 
     def takeScreenshot(self, driver):
         """
