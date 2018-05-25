@@ -1,16 +1,18 @@
+'''
+Created on May 24, 2018
+@author: venkateshwara.d
+'''
 from traceback import print_stack
 from utilities.handy_wrappers import HandyWrappers
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import *
 
-
 class ExplicitWaitType():
 
     def __init__(self, driver):
         self.driver = driver
         self.hw = HandyWrappers(driver)
-
 
     def waitForElement(self, locator, locatorType="xpath",
                        timeout=10, pollFrequency=0.5):
