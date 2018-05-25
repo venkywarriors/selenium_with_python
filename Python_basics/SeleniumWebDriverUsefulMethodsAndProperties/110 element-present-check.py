@@ -1,8 +1,11 @@
+'''
+Created on May 30, 2018
+@author: venkateshwara.d
+'''
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from utilities.handy_wrappers import HandyWrappers
 import time
-
 
 class ElementPresentCheck():
 
@@ -21,7 +24,6 @@ class ElementPresentCheck():
 
         elementResult2 = hw.elementPresenceCheck("//input[@id='name1']", By.XPATH)
         print(str(elementResult2))
-
 
 ff = ElementPresentCheck()
 ff.test()
