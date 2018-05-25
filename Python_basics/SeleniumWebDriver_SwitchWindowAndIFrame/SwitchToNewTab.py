@@ -1,9 +1,7 @@
 '''
 Created on May 23, 2018
-
 @author: venkateshwara.d
 '''
-
 from selenium import webdriver
 import time
 import os
@@ -36,6 +34,5 @@ class SwitchToNewTab():
         # close the active tab
         driver.close()
             
-
 ff = SwitchToNewTab()
 ff.test1()
