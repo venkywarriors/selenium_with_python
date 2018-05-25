@@ -1,8 +1,11 @@
+'''
+Created on May 30, 2018
+@author: venkateshwara.d
+'''
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from utilities.handy_wrappers import HandyWrappers
 import time
-
 
 class GetText():
 
@@ -18,7 +21,6 @@ class GetText():
         print("Text on element is: " + elementText)
         time.sleep(1)
         driver.quit()
-
 
 ff = GetText()
 ff.test()
