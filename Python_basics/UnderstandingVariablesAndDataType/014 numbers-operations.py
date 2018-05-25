@@ -1,5 +1,4 @@
 # This is a one line comment
-
 # Exponentiation
 # 10 * 10 ... 20
 exponents = 10 ** 20
