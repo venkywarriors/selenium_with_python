@@ -1,3 +1,7 @@
+'''
+Created on May 30, 2018
+@author: venkateshwara.d
+'''
 from selenium import webdriver
 import os
 
@@ -25,8 +29,6 @@ class ElementState():
         print("E3 is Enabled? -> " + str(e3State))
 
         e3.send_keys("letskodeit")
-
-
-
+        
 e = ElementState()
 e.isEnabled()
