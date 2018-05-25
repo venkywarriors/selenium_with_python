@@ -1,5 +1,6 @@
-"""
-@package utilities
+'''
+Created on May 30, 2018
+@author: venkateshwara.d
 
 Util class implementation
 
@@ -8,13 +9,9 @@ All most commonly used utilities should be implemented in this class
 This class is initialized in basepage class and guibasetestcase class
 There is no need to create an object instance in page classes and test case classes
 
-@author Anil Tomar <anil.tomar@nimblestorage.com>
-@version 1.0
-@copyright Nimble Storage, Inc
-
 Example:
     name = self.util.getUniqueName()
-"""
+'''
 import time
 import traceback
 import random, string
