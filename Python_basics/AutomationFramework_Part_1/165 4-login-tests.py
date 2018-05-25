@@ -1,3 +1,7 @@
+'''
+Created on May 30, 2018
+@author: venkateshwara.d
+'''
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from pages.home.login_page import LoginPage
@@ -14,7 +18,6 @@ class LoginTests(unittest.TestCase):
 
         lp = LoginPage(driver)
         lp.login("test@email.com", "abcabc")
-
 
         userIcon = driver.find_element(By.XPATH, ".//*[@id='navbar']//span[text()='User Settings']")
         if userIcon is not None:
