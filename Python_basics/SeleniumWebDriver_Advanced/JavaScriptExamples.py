@@ -25,11 +25,11 @@ class MyTestCase(unittest.TestCase):
         self.driver.execute_script("window.location = 'https://www.makemytrip.com'")
         self.driver.maximize_window()
         sleep(2)
-
+        # Refreshing the page using javaScript
         print("Refreshing the page")
         self.driver.execute_script("history.go(0)")
         sleep(2)
-
+        # Page title using javaScript
         print("Page title is :"+self.driver.execute_script("return document.title;"))
 
         search = self.driver.execute_script("return document.getElementById('searchBtn');")
@@ -45,11 +45,11 @@ class MyTestCase(unittest.TestCase):
         self.driver.execute_script("arguments[0].scrollIntoView(true);", ele)
         print("Scrolled successfully to :"+ele.text)
         sleep(2)
-
+        # Highlighted elements using javaScript
         self.driver.execute_script("arguments[0].setAttribute('style', arguments[1]);", ele, "background:yellow; color: Red; border: 4px dotted solid yellow;")
         print("Highlighted elements :"+ele.text)
         sleep(2)
-
+        # click using javaScript
         twt = self.driver.find_element_by_xpath("//*[contains(text(),'Twitter')]")
         self.driver.execute_script("arguments[0].click();",twt)
         print("Clicked in Twitter link")
