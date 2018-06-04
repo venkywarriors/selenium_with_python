@@ -35,7 +35,10 @@ class MyTestCase(unittest.TestCase):
         search = self.driver.execute_script("return document.getElementById('searchBtn');")
         print("Search button class :"+search.get_attribute("class"))
         sleep(2)
-
+        # gettext method using javaScript
+        print (self.driver.execute_script("return arguments[0].innerHTML", search))
+        print (self.driver.execute_script("return arguments[0].textContent", search))
+        
         print("Scrolling down to coordinates (300,2000)")
         self.driver.execute_script("window.scrollBy(300,2000)")
         sleep(2)
