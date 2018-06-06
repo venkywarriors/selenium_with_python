@@ -1,5 +1,5 @@
 # Selenium WebDriver with Python 3.x
-![alt text](https://github.com/venkywarriors619/Selenium_java_Advanced/blob/master/testpython/1_gRvKUMZYrL1miPWbkIyVTQ.png "Logo Title Text 1")
+![alt text](https://github.com/venkywarriors619/Selenium_java_Advanced/blob/master/testpython/1_gRvKUMZYrL1miPWbkIyVTQ.png "Selenium WebDriver with Python 3.x ")
 ###### Selenium with python from basic to advanced with python 3.x This Project has selenium webdriver with python 3.x from basic to advanced level
 
 **Topics covered**
@@ -30,6 +30,6 @@ End to End Exercises for Practise!!
 
 What Will I Learn?
 
-At the end of this course, You will get complete knowledge on Selenium Webdriver Automation with Python
-You will be in a position to automate any Web Application over the Net using Selenium
-You will be able to write quality code on Python to design robust Selenium Testcases
+* At the end of this course, You will get complete knowledge on Selenium Webdriver Automation with Python
+* You will be in a position to automate any Web Application over the Net using Selenium
+* You will be able to write quality code on Python to design robust Selenium Testcases
