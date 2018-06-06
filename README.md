@@ -1,8 +1,8 @@
-# Selenium WebDriver with Python 3.x
+# Selenium WebDriver with Python 3.x :mortar_board:
 ![alt text](https://github.com/venkywarriors619/Selenium_java_Advanced/blob/master/testpython/1_gRvKUMZYrL1miPWbkIyVTQ.png "Selenium WebDriver with Python 3.x ")
 ###### Selenium with python from basic to advanced with python 3.x This Project has selenium webdriver with python 3.x from basic to advanced level
 
-**Topics covered**
+**Topics covered:pencil:**
 
 Automation Framework
 Advanced Web element access method- Contains, Sibling, Ancestor and etc.,
