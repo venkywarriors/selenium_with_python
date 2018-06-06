@@ -34,6 +34,8 @@
 
 :pencil2:Design Patterns of Selenium
 
+:pencil2:PyAutoGUI for programmatically controlling the mouse and keyboard
+
 :pencil2:Automation Framework
 
 :pencil2:Framework designing methods
