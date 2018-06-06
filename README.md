@@ -4,29 +4,47 @@
 
 **Topics covered:pencil:**
 
-Automation Framework
-Advanced Web element access method- Contains, Sibling, Ancestor and etc.,
-Framework designing methods
-Framework adaptation
-Feature Testing Automation
-Report Generation out of Automation
-Real time Automation and the Challenges
-Topics includes :
+:pencil2:Automation Framework
 
-Design Patterns of Selenium
-Python Basics
-Webdriver Architecture
-loops holes in depricaited Versions of Selenium
-Tips and tricks in identifying Webobjects
-Tools used to identify the WebUI in Firefox,Chrome,IE
-End to End Webdriver API methods with Live Examples
-Automating Web applications in all supported Browsers
-Strategy to handle Rich Web UI using Advanced Webdriver API
-Handling Child Windows
-Handling Frames
-Java Alerts and Popups Handling with Selenium
-Various Miscelleneous Concepts to deal with and
-End to End Exercises for Practise!!
+:pencil2:Advanced Web element access method- Contains, Sibling, Ancestor and etc.,
+
+:pencil2:Framework designing methods
+
+:pencil2:Framework adaptation
+
+:pencil2:Feature Testing Automation
+
+:pencil2:Report Generation out of Automation
+
+:pencil2:Real time Automation and the Challenges
+
+:pencil2:Design Patterns of Selenium
+
+:pencil2:Python Basics
+
+:pencil2:Webdriver Architecture
+
+:pencil2:loops holes in depricaited Versions of Selenium
+
+:pencil2:Tips and tricks in identifying Webobjects
+
+:pencil2:Tools used to identify the WebUI in Firefox,Chrome,IE
+
+:pencil2:End to End Webdriver API methods with Live Examples
+
+:pencil2:Automating Web applications in all supported Browsers
+
+:pencil2:Strategy to handle Rich Web UI using Advanced Webdriver API
+
+:pencil2:Handling Child Windows
+
+:pencil2:Handling Frames
+
+:pencil2:Java Alerts and Popups Handling with Selenium
+
+:pencil2:Various Miscelleneous Concepts to deal with and
+
+:pencil2:End to End Exercises for Practise!!
 
 **What Will I Learn? :book::books:**
 
