@@ -1,6 +1,5 @@
 # Selenium WebDriver with Python 3.x
-[logo]: https://github.com/venkywarriors619/Selenium_java_Advanced/blob/master/testpython/images.jpeg "Logo Title Text 2"
-![alt text](https://github.com/venkywarriors619/Selenium_java_Advanced/blob/master/testpython/images.jpeg "Logo Title Text 1")
+![alt text](https://github.com/venkywarriors619/Selenium_java_Advanced/blob/master/testpython/1_gRvKUMZYrL1miPWbkIyVTQ.png "Logo Title Text 1")
 selenium with python from basic to advanced with python 3.x
 This Project has selenium webdriver with python 3.x from basic to advanced level
 
