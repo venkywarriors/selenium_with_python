@@ -28,7 +28,7 @@ Java Alerts and Popups Handling with Selenium
 Various Miscelleneous Concepts to deal with and
 End to End Exercises for Practise!!
 
-What Will I Learn?
+**What Will I Learn? :book::books:**
 
 * At the end of this course, You will get complete knowledge on Selenium Webdriver Automation with Python
 * You will be in a position to automate any Web Application over the Net using Selenium
