@@ -4,9 +4,37 @@
 
 **Topics covered:pencil:**
 
-:pencil2:Automation Framework
+:pencil2:Python Basics
+
+:pencil2:Webdriver Architecture
+
+:pencil2:Loops holes in depricaited Versions of Selenium
+
+:pencil2:Tips and tricks in identifying Webobjects
+
+:pencil2:Tools used to identify the WebUI in Firefox,Chrome,IE
+
+:pencil2:End to End Webdriver API methods with Live Examples
+
+:pencil2:Automating Web applications in all supported Browsers
 
 :pencil2:Advanced Web element access method- Contains, Sibling, Ancestor and etc.,
+
+:pencil2:Strategy to handle Rich Web UI using Advanced Webdriver API
+
+:pencil2:Handling Child Windows
+
+:pencil2:Handling Frames
+
+:pencil2:Java Alerts and Popups Handling with Selenium
+
+:pencil2:Data parameterization using openpyxl
+
+:pencil2:File Upload and Download using Selenium
+
+:pencil2:Design Patterns of Selenium
+
+:pencil2:Automation Framework
 
 :pencil2:Framework designing methods
 
@@ -18,33 +46,8 @@
 
 :pencil2:Real time Automation and the Challenges
 
-:pencil2:Design Patterns of Selenium
-
-:pencil2:Python Basics
-
-:pencil2:Webdriver Architecture
-
-:pencil2:loops holes in depricaited Versions of Selenium
-
-:pencil2:Tips and tricks in identifying Webobjects
-
-:pencil2:Tools used to identify the WebUI in Firefox,Chrome,IE
-
-:pencil2:End to End Webdriver API methods with Live Examples
-
-:pencil2:Automating Web applications in all supported Browsers
-
-:pencil2:Strategy to handle Rich Web UI using Advanced Webdriver API
-
-:pencil2:Handling Child Windows
-
-:pencil2:Handling Frames
-
-:pencil2:Java Alerts and Popups Handling with Selenium
-
-:pencil2:Various Miscelleneous Concepts to deal with and
-
 :pencil2:End to End Exercises for Practise!!
+
 
 **What Will I Learn? :book::books:**
 
