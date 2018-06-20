@@ -26,6 +26,7 @@ class MouseHovering():
         try:
             actions = ActionChains(driver)
             actions.move_to_element(element).perform()
+            # ActionChains(driver).move_to_element(element).perform()
             print("Mouse Hovered on element")
             time.sleep(2)
             topLink = driver.find_element(By.XPATH, itemToClickLocator)
