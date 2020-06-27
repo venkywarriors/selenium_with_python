@@ -1,5 +1,5 @@
 # Selenium WebDriver with Python 3.x :mortar_board:
-![alt text](https://github.com/venkywarriors619/Selenium_java_Advanced/blob/master/testpython/123.png "Selenium WebDriver with Python 3.x ")
+![alt text](https://github.com/venkywarriors619/Selenium_java_Advanced/blob/master/Venkatesware/123.png "Selenium WebDriver with Python 3.x ")
 ###### This Project has selenium webdriver with python 3.x from basic to advanced level
 
 **Topics covered:pencil:**
