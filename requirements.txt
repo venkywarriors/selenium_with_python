@@ -1,1 +1,2 @@
 faker==4.1.1
+jproperties==2.1.0
