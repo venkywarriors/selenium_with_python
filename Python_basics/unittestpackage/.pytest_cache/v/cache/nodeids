@@ -1,6 +1,0 @@
-[
-  "test_suite_demo.py::TestClass1::test_class1_methodA",
-  "test_suite_demo.py::TestClass1::test_class1_methodB",
-  "test_suite_demo.py::TestClass2::test_class2_methodA",
-  "test_suite_demo.py::TestClass2::test_class2_methodB"
-]
