@@ -31,6 +31,7 @@ for item in items_view:
     list_keys.append(item[0])
 #Getting List of Keys from the Properties File 
 print("Output as List ",list_keys)
+#Read Properties File into Dictionary
 print("Dictionary ",db_configs_dict)
     
  
