@@ -11,13 +11,15 @@ from selenium import webdriver
 import unittest
 import time
 import HtmlTestRunner
+from webdriver_manager.chrome import ChromeDriverManager
 
 class GoogleSearch(unittest.TestCase):
     
     @classmethod
     def setUpClass(cls):
         #super(GoogleSearch, cls).setUpClass()
-        cls.driver = webdriver.Chrome(executable_path='../Drivers/chromedriver.exe')
+        #cls.driver = webdriver.Chrome(executable_path='../Drivers/chromedriver.exe')
+        cls.driver = webdriver.Chrome(ChromeDriverManager().install())
         cls.driver.implicitly_wait(10)
         cls.driver.maximize_window()
         
