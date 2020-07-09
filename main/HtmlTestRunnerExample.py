@@ -19,6 +19,14 @@ class GoogleSearch(unittest.TestCase):
     def setUpClass(cls):
         #super(GoogleSearch, cls).setUpClass()
         #cls.driver = webdriver.Chrome(executable_path='../Drivers/chromedriver.exe')
+        from selenium.webdriver.chrome.options import Options  
+
+chrome_options = Options()  
+chrome_options.add_argument("--headless")  
+chrome_options.binary_location = '/Applications/Google Chrome   Canary.app/Contents/MacOS/Google Chrome Canary'`    
+
+driver = webdriver.Chrome(executable_path=os.path.abspath(“chromedriver"),   chrome_options=chrome_options)  
+driver.get("http://www.duo.com")`  
         cls.driver = webdriver.Chrome(ChromeDriverManager().install())
         cls.driver.implicitly_wait(10)
         cls.driver.maximize_window()
